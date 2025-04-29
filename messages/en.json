@@ -1,4 +1,13 @@
 {
-	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from en!"
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "hello_world": "Hello, {name} from en!",
+  "navAbout": "About Escape games",
+  "navRooms": "Our rooms",
+  "navGallery": "Gallery",
+  "navPrices": "Pricing",
+  "navVoucher": "Gift vouchers",
+  "navContact": "Contacts",
+  "footerNavigationHeading": "Links",
+  "footerContactHeading": "Contact us",
+  "footerFlex": "Made by unIQue room s.r.o."
 }
