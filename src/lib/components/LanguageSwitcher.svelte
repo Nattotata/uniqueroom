@@ -1,9 +1,9 @@
 <script lang="ts">
   import {
-    availableLanguageTags,
-    languageTag,
+    getLocale,
+    locales,
+    localizeHref,
   } from '$lib/paraglide/runtime';
-  import { i18n } from '$lib/i18n';
   import { page } from '$app/state';
   import LanguageSwitchDropdown from './LanguageSwitchDropdown.svelte';
   const flags = {
@@ -16,16 +16,16 @@
     en: 'English',
     cs: 'čeština',
   };
-  const languageSwitcherData = availableLanguageTags.map((tag) => {
+  const languageSwitcherData = locales.map((tag) => {
     return {
       tag,
       flag: flags[tag],
-      href: i18n.route(path),
+      href: localizeHref(path),
       alt: languageLongNames[tag],
     };
   });
 </script>
 
 <LanguageSwitchDropdown input={languageSwitcherData}>
-  {flags[languageTag()]}
+  {flags[getLocale()]}
 </LanguageSwitchDropdown>

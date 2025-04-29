@@ -1,11 +1,11 @@
 <script lang="ts">
   import * as Popover from '$lib/components/ui/popover/index.js';
-  import { i18n } from '$lib/i18n';
 
   import { page } from '$app/state';
   import {
-    languageTag,
-    setLanguageTag,
+    getLocale,
+    setLocale,
+    localizeHref,
   } from '$lib/paraglide/runtime';
 
   const { input, children } = $props();
@@ -30,17 +30,15 @@
     {#each input as item, index}
       <div class=" py-1" role="none">
         <a
-          href={i18n.route(path)}
+          href={localizeHref(path)}
           class="text-md block py-2 text-black"
           role="menuitem"
           data-sveltekit-preload-data="hover"
           tabindex="-1"
           hreflang={item.tag}
-          aria-current={item.tag === languageTag()
-            ? 'page'
-            : undefined}
+          aria-current={item.tag === getLocale() ? 'page' : undefined}
           onclick={() => {
-            setLanguageTag(item.tag);
+            setLocale(item.tag);
             setOpen(false);
           }}
           id="menu-item-{index}"
