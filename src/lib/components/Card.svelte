@@ -12,8 +12,7 @@
     children = null,
     cardCss = '',
     Icon = null,
-    Image,
-    imageAlt = '',
+    imageSnippet = null,
     content = '',
     buttonText = '',
     buttonLink = '',
@@ -48,8 +47,8 @@
     {#if Icon}
       <Icon size="100" color="black" />
     {/if}
-    {#if Image}
-      <img src={Image} alt={imageAlt} />
+    {#if imageSnippet}
+      {@render imageSnippet()}
     {/if}
     <Card.Title
       class={cn('text-2xl font-semibold text-black', titleCss)}

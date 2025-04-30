@@ -24,13 +24,14 @@
 {m.roomsPrisonTitle()}
 
 {#each roomsData as room}
+  {#snippet imageSnippet()}
+    <img src={cellImage} alt={room.title} />
+  {/snippet}
   <Card
     title={room.title}
-    image={cellImage}
+    {imageSnippet}
     titleDescription={room.parameters}
   >
     {room.description}
   </Card>
 {/each}
-
-<img src={cellImage} alt="foo" />
