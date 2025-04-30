@@ -21,8 +21,8 @@
       <Paragraph>{phone}</Paragraph>
     </div>
   </div>
-  <div class="flex flex-col items-center justify-center">
-    <Paragraph>{m.footerFlex()}</Paragraph>
+  <div class="mt-6 flex flex-col items-center justify-center">
+    <Paragraph>{m.footerLegalRequirements()}</Paragraph>
     <Paragraph>
       © {new Date().getFullYear()}
     </Paragraph>

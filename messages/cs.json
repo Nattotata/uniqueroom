@@ -1,6 +1,8 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
   "hello_world": "Hello, {name} from en!",
+  "mainTitle": "unIQue room",
+  "mainSubtitle": "únikové místnosti v centru Brna",
   "navAbout": "O únikových hrách",
   "navRooms": "Naše místnosti",
   "navGallery": "Fotogalerie",
@@ -9,5 +11,18 @@
   "navContact": "Kontakt",
   "footerNavigationHeading": "Odkazy",
   "footerContactHeading": "Kontaktujte nás",
-  "footerFlex": "Vyrobeno firmou unIQue room s.r.o."
+  "footerLegalRequirements": "Unique room s.r.o., spisová značka: C 63667 vedená u Krajského soudu v Ostravě, IČ 04452119, sídlo společnosti: Čsl. armády 74/36, 787 01 Šumperk",
+  "cardFriendsTitle": "Přátele",
+  "cardFriendsParagraph": "Hledáte nevšední druh zábavy? Nabízíme společně strávený čas, na který jen tak nezapomenete.",
+  "cardFriendsFooter": "<strong>Tip:</strong> můžete vzít svého partnera/ku na originální rande!",
+  "aboutRoomsTitle": "Únikové hry",
+  "aboutRoomsHeading1": "Co je to úniková hra?",
+  "aboutRoomsContent1": "Je to aktivita, během které se skupina lidí ocitá v tematické místnosti. Co můžete očekávat jsou kreativní úkoly, tajné místnosti a nemilosrdné ubíhání času na časomíře. Je to jako být v kině, ale vy jste aktéři. Téma bývá různé. Můžete být hrdinou, který se snaží zachránit svět nebo třeba trestancem, který uniká z cely.",
+  "aboutRoomsHeading2": "A jak se dostat z únikové hry ven?",
+  "aboutRoomsContent2": "Únikové hry nejsou náročné po fyzické ani vědomostní stránce. Důležitá je všímavost, logické uvažování a úplně nejdůležitější je spolupráce a komunikace.",
+  "roomsText": "Chcete se objednat na poslední chvíli? Zavolejte nám na:",
+  "roomsTitle": "Únikové hry unIQue room",
+  "roomsPrisonTitle": "Vojákova cela",
+  "roomsPrisonParameters": "{duration} minut, {people} hráčů",
+  "roomsPrisonDescription": "Dokážete uniknout z vězení? <br />Vojákova cela je zážitek na doživotí!"
 }

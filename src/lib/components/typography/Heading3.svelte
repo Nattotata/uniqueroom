@@ -1,9 +1,13 @@
 <script lang="ts">
-  const { children } = $props();
+  import { cn } from '$lib/utils';
+  const { children, className = '' } = $props();
 </script>
 
 <h3
-  class="scroll-m-20 text-2xl font-semibold tracking-tight"
+  class={cn(
+    className,
+    'scroll-m-20 text-2xl font-semibold tracking-tight',
+  )}
 >
   {@render children()}
 </h3>

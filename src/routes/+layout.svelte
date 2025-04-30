@@ -2,6 +2,10 @@
   import '../app.css';
   import Navbar from '$lib/components/Navbar.svelte';
   import Footer from '$lib/components/Footer.svelte';
+  import Audience from '$lib/components/Audience.svelte';
+  import HeroImage from '$lib/components/HeroImage.svelte';
+  import AboutEscapeGames from '$lib/components/AboutEscapeGames.svelte';
+  import Rooms from '$lib/components/Rooms.svelte';
   let { children } = $props();
 </script>
 
@@ -32,5 +36,9 @@
   />
 </svelte:head>
 <Navbar />
+<HeroImage />
+<Audience />
+<AboutEscapeGames />
+<Rooms />
 {@render children()}
 <Footer />

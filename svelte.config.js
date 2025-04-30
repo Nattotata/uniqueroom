@@ -15,6 +15,7 @@ const config = {
       $typography: 'src/lib/components/typography/*',
       $layout: 'src/lib/layout/*',
       $shadcn: 'src/lib/components/ui',
+      $assets: 'src/assets',
     },
     adapter: adapter(),
   },
