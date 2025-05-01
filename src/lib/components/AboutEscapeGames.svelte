@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Heading2, Heading3, Paragraph } from '$typography';
   import * as m from '$lib/paraglide/messages';
-  import peep from '$assets/img/10.webp';
+  import peep from '$assets/img/prison_small_box.jpg';
 </script>
 
 <div class="flex w-full flex-col">

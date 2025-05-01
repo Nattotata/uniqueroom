@@ -44,5 +44,9 @@
     "happyCustomers": "adventurers",
     "minutesOfFun": "minutes of fun",
     "adventurers": "adventurers"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "description": "Photos of the games."
   }
 }

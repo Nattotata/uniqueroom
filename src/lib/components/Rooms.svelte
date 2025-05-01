@@ -3,7 +3,7 @@
   import { Heading2, Paragraph } from '$typography';
   import { phone } from '$lib/contacts.js';
   import { parameters } from '$lib/roomsParameters';
-  import cellImage from '$assets/img/7.jpg';
+  import cellImage from '$assets/img/prison_hat.jpg';
   import wineryImage from '$assets/img/vinarstvi.webp';
   import catImage from '$assets/img/kocka.webp';
   import Card from '$lib/components/Card.svelte';

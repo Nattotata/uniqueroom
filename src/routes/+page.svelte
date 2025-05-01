@@ -4,6 +4,7 @@
   import AboutEscapeGames from '$lib/components/AboutEscapeGames.svelte';
   import Rooms from '$lib/components/Rooms.svelte';
   import BoastStrip from '$lib/components/BoastStrip.svelte';
+  import Gallery from '$lib/components/Gallery.svelte';
 </script>
 
 <HeroImage />
@@ -11,3 +12,4 @@
 <AboutEscapeGames />
 <Rooms />
 <BoastStrip />
+<Gallery />

@@ -38,5 +38,9 @@
     "happyCustomers": "spokojených lidí",
     "minutesOfFun": "minut zprostředkované zábavy",
     "adventurers": "spokojených lidí"
+  },
+  "gallery": {
+    "title": "Fotogalerie únikových her",
+    "description": "Jak to u nás vypadá."
   }
 }
