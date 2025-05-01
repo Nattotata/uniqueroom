@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+  import Audience from '$lib/components/Audience.svelte';
+  import HeroImage from '$lib/components/HeroImage.svelte';
+  import AboutEscapeGames from '$lib/components/AboutEscapeGames.svelte';
+  import Rooms from '$lib/components/Rooms.svelte';
+  import BoastStrip from '$lib/components/BoastStrip.svelte';
+</script>
+
+<HeroImage />
+<Audience />
+<AboutEscapeGames />
+<Rooms />
+<BoastStrip />

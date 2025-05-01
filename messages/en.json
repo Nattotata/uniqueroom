@@ -21,7 +21,7 @@
   "cardTeambuildingContent": "We offer teambuilding that you will enjoy. Up to 16 people! Do not hesitate to contact us, we can modify time slots to your preferences.",
   "cardGiftTitle": "Voucher",
   "cardGiftContent": "Be original, give an experience! We offer gift vouchers with hand drawn motives.",
-  "aboutRoomsTitle": "Escape games",
+  "aboutRoomsTitle": "About escape games",
   "aboutRoomsHeading1": "What is an escape game?",
   "aboutRoomsContent1": "It is an activity, during which a group of people tries to escape from a thematic room. You can expect creative puzzles, hidden rooms, and everlasting ticking of the remaining time. It is like seing a movie, but you are the actors. The themes vary. You can be a hero trying to save the world or a prisoner on the run.",
   "aboutRoomsHeading2": "And how to escape an escape room?",
@@ -30,5 +30,19 @@
   "roomsText": "Looking for a last minute reservation? Call us at:",
   "roomsPrisonTitle": "Soldier's cell",
   "roomsPrisonParameters": "{duration} minutes, {people} players",
-  "roomsPrisonDescription": "Will you manage to escape from a prison? <br />Soldier's cell is an experience for a lifetime!"
+  "roomsPrisonDescription": "Will you manage to escape from a prison? Soldier's cell is an experience for a lifetime!",
+  "roomsWineryTitle": "Mysterious winery",
+  "roomsWineryParameters": "{duration} minutes, {people} players",
+  "roomsWineryDescription": "Experience a profound story in atmospheric Winery. Will you uncover its mysteries?",
+  "roomsCatTitle": "Planet of cats",
+  "roomsCatParameters": "{duration} minutes, {people} players",
+  "roomsCatDescription": "Our interdimensional portal will take you to a universe, where an innocent experiment went very wrong.",
+  "roomsButton": "Book now",
+  "boastStrip": {
+    "experience": "years of experience",
+    "groups": "groups",
+    "happyCustomers": "adventurers",
+    "minutesOfFun": "minutes of fun",
+    "adventurers": "adventurers"
+  }
 }

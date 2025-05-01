@@ -15,7 +15,7 @@
   "cardFriendsTitle": "Přátele",
   "cardFriendsParagraph": "Hledáte nevšední druh zábavy? Nabízíme společně strávený čas, na který jen tak nezapomenete.",
   "cardFriendsFooter": "<strong>Tip:</strong> můžete vzít svého partnera/ku na originální rande!",
-  "aboutRoomsTitle": "Únikové hry",
+  "aboutRoomsTitle": "O únikových hrách",
   "aboutRoomsHeading1": "Co je to úniková hra?",
   "aboutRoomsContent1": "Je to aktivita, během které se skupina lidí ocitá v tematické místnosti. Co můžete očekávat jsou kreativní úkoly, tajné místnosti a nemilosrdné ubíhání času na časomíře. Je to jako být v kině, ale vy jste aktéři. Téma bývá různé. Můžete být hrdinou, který se snaží zachránit svět nebo třeba trestancem, který uniká z cely.",
   "aboutRoomsHeading2": "A jak se dostat z únikové hry ven?",
@@ -24,5 +24,19 @@
   "roomsTitle": "Únikové hry unIQue room",
   "roomsPrisonTitle": "Vojákova cela",
   "roomsPrisonParameters": "{duration} minut, {people} hráčů",
-  "roomsPrisonDescription": "Dokážete uniknout z vězení? <br />Vojákova cela je zážitek na doživotí!"
+  "roomsPrisonDescription": "Dokážete uniknout z vězení? Vojákova cela je zážitek na doživotí!",
+  "roomsWineryTitle": "Záhada vinařství",
+  "roomsWineryParameters": "{duration} minut, {people} hráčů",
+  "roomsWineryDescription": "Vinařství nabízí jedinečnou atmosféru a poutavý příběh. Dokážete odhalit záhady, které skrývá?",
+  "roomsCatTitle": "Planeta koček",
+  "roomsCatParameters": "{duration} minut, {people} hráčů",
+  "roomsCatDescription": " V naší nejmladší únikovce budete cestovat časoprostorem a zachraňovat svět. Troufnete si?",
+  "roomsButton": "Rezervovat",
+  "boastStrip": {
+    "experience": "let zkušeností",
+    "groups": "skupin",
+    "happyCustomers": "spokojených lidí",
+    "minutesOfFun": "minut zprostředkované zábavy",
+    "adventurers": "spokojených lidí"
+  }
 }
