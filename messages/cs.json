@@ -42,5 +42,45 @@
   "gallery": {
     "title": "Fotogalerie únikových her",
     "description": "Jak to u nás vypadá."
+  },
+  "review": {
+    "title": "Recenze",
+    "review1": "„Bomba!! Strašně jsem si to užila. Prostředí suprové a to nemluvím o jednotlivých úkolech. Nečekala jsem, že na tak malý prostor se může vměstnat tolik úkolů (ani nevím, kolik jich bylo)! Bylo nás celkem 5 a každý si našel své, kde ukázal své dovednosti, postřehy. Jestli o někom budu vědět, že chce na únikovou hru, doporučím Vás!“",
+    "review2": " „Skvělá zábava pro děti i pro dospělé. Provětrali jsme mozkové buňky. Hra je promyšlená do všech detailů, z místnosti se dá v daném čase uniknout. Přesto jsme potřebovali drobnou pomoc. Personál nás ochotně a vhodným způsobem nasměroval, jak najít potřebnou indicii. Doporučuji všem, kteří si chtějí otestovat schopnost týmové spolupráce, nebo se jen tak aktivně pobavit.“",
+    "review3": " „Vyslobodenie z únikovej izby si vyžadovalo zvládnuť úlohy, pri ktorých sme museli vzájomne spolupracovať na ich vyriešení. Museli sme pri tom zapojiť viacero zmyslov.“",
+    "review1followUp": " ...více recenzí na",
+    "review2followUp": "...více recenzí na",
+    "review3followUp": "z návštěvy mládeže ÚNSS a <a href='https://www.unss.sk/yalta/vystupy.php#brno'>YALTA</a>, pro nás skvělé zkušenosti s přizpůsobením místnosti pro zrakově postižené.",
+    "review1followUpLink": "Facebooku",
+    "review2followUpLink": "Tripadvisoru"
+  },
+  "pricing": {
+    "title": "Ceník",
+    "normalPriceTitle": "Běžná cena",
+    "discountedPriceTitle": "Zvýhodněné vstupné",
+    "catPriceTitle": "Planeta koček",
+    "normal": {
+      "title": "Běžná cena",
+      "players": "hráčů",
+      "description": "Vojákova cela a Záhada vinařství",
+      "timeLimit": "minut",
+      "priceDetail": "za skupinu"
+    },
+    "discounted": {
+      "title": "Zvýhodněné vstupné",
+      "players": "hráčů",
+      "description": "Vojákova cela a Záhada vinařství",
+      "condition": "Pro termíny <strong>do 13. hodiny</strong>, nekombinovatelné s jinými slevami.",
+      "timeLimit": "minut",
+      "priceDetail": "za skupinu"
+    },
+    "cat": {
+      "title": "Planeta koček",
+      "players": "hráči",
+      "description": "Planeta koček",
+      "timeLimit": "minut",
+      "priceDetail": "za skupinu"
+    },
+    "buttonText": "Rezervovat"
   }
 }

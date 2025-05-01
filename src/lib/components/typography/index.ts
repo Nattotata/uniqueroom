@@ -5,6 +5,7 @@ import Heading3 from './Heading3.svelte';
 import Heading4 from './Heading4.svelte';
 import List from './List.svelte';
 import Paragraph from './Paragraph.svelte';
+import Muted from './Muted.svelte';
 
 export {
   Blockquote,
@@ -13,5 +14,6 @@ export {
   Heading3,
   Heading4,
   List,
-  Paragraph
+  Paragraph,
+  Muted,
 };

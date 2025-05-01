@@ -5,6 +5,8 @@
   import Rooms from '$lib/components/Rooms.svelte';
   import BoastStrip from '$lib/components/BoastStrip.svelte';
   import Gallery from '$lib/components/Gallery.svelte';
+  import Reviews from '$lib/components/Reviews.svelte';
+  import Pricing from '$lib/components/Pricing.svelte';
 </script>
 
 <HeroImage />
@@ -13,3 +15,5 @@
 <Rooms />
 <BoastStrip />
 <Gallery />
+<Reviews />
+<Pricing />

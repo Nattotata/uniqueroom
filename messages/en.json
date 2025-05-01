@@ -48,5 +48,45 @@
   "gallery": {
     "title": "Gallery",
     "description": "Photos of the games."
+  },
+  "review": {
+    "title": "Review",
+    "review1": "„Very good escape room with different type of puzzle to solve and few surprises. We enjoyed it.“",
+    "review2": "„You need only couple of friends and you can enjoy funny adventure. You do not need to be strong like Superman, or clever like Lex Luthor. It can be rainy day, but you still can have great entertainment :-) This escape room has good background story, logical quests with balanced difficulty. When you get stuck, you may use hint, so you will have chance find next clue and you will not miss your goal. But no clue will steal your experience, you will be in tension, because time is running out...“",
+    "review3": "„Escaping the escape room required us to solve puzzles that required us to work together. We had to engage multiple senses.“",
+    "review1followUp": "...more reviews on",
+    "review2followUp": "...more reviews on",
+    "review3followUp": "from a visit of ÚNSS youth and <a href='https://www.unss.sk/yalta/vystupy.php#brno'>YALTA</a>, for us it was a great experience in modifying the escape room for visual impairment.",
+    "review1followUpLink": "Facebook",
+    "review2followUpLink": "Tripadvisor",
+    "review3followUpPart1": "from a visit of ÚNSS youth and",
+    "review3followUpPart2": "YALTA",
+    "review3followUpPart3": ", for us it was a great experience in modifying the escape room for visual impairment."
+  },
+  "pricing": {
+    "title": "Pricing",
+    "normal": {
+      "title": "Normal price",
+      "players": "players",
+      "description": "Soldier's cell and Mysterious winery",
+      "timeLimit": "minutes",
+      "priceDetail": "per group"
+    },
+    "discounted": {
+      "title": "Special offer",
+      "players": "players",
+      "description": "Soldier's cell and Mysterious winery",
+      "condition": "For time slots <strong>before 1 pm</strong>, incompatible with other discounts.",
+      "timeLimit": "minutes",
+      "priceDetail": "per group"
+    },
+    "cat": {
+      "title": "Planet of cats",
+      "players": "players",
+      "description": "Planet of cats",
+      "timeLimit": "minutes",
+      "priceDetail": "per group"
+    },
+    "buttonText": "Book now"
   }
 }
