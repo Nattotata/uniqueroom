@@ -88,5 +88,49 @@
       "priceDetail": "per group"
     },
     "buttonText": "Book now"
+  },
+
+  "giftVoucher": {
+    "submitButton": "Objednat",
+    "email": {
+      "label": "Email",
+      "description": "Zadejte Váš email"
+    },
+    "name": {
+      "label": "Jméno",
+      "description": "Zadejte Vaše jméno"
+    },
+    "room": {
+      "label": "Úniková hra",
+      "description": "Vyberte únikovou hru",
+      "prison": "Vojákova cela",
+      "winery": "Záhada vinařství",
+      "cat": "Planeta koček"
+    },
+    "discounted": {
+      "label": "Dopolední termín",
+      "description": "Vyberte dopolední termín nebo termín bez omezení",
+      "discounted": "Termíny do 13. hodiny (Záhada vinařství, Vojákova cela)",
+      "full": "Termín bez omezení"
+    },
+    "variant": {
+      "label": "Varianta voucheru",
+      "description": "Voucher v papírové nebo elektronické formě",
+      "paper": "Voucher v papírové formě (k vyzvednutí na Lidické 40)",
+      "electronic": "Voucher v elektronické formě (zašleme na email)"
+    },
+    "payment": {
+      "label": "Platba",
+      "description": "Vyberte platební metodu",
+      "cash": "Platba hotově (na Lidické 40)",
+      "stripe": "Platba online (kartou nebo v bankovní aplikaci)",
+      "bankTransfer": "Platba převodem na účet"
+    },
+    "note": {
+      "label": "Poznámka"
+    },
+    "personalInfoProcessing": {
+      "label": "Souhlas se <a href='https://www.uniqueroom.cz/ZOOU.pdf'><strong>zpracováním osobních údajů</strong></a>."
+    }
   }
 }
