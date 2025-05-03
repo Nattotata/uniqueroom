@@ -45,6 +45,7 @@
       value: 'cat',
     },
   ];
+
   const discounted = [
     {
       translationKey: m['giftVoucher.discounted.discounted'](),
@@ -83,34 +84,36 @@
   ];
 </script>
 
-<form method="POST" use:enhance class="m-8">
-  <Form.Field {form} name="name">
+<form method="POST" use:enhance class="m-8 w-[400px]">
+  <Form.Field {form} name="name" class="space-y-1">
     <Form.Control>
       {#snippet children({ props })}
         <Form.Label>{m['giftVoucher.name.label']()}</Form.Label>
-        <Input {...props} bind:value={$formData.name} />
+        <Input
+          {...props}
+          bind:value={$formData.name}
+          placeholder={m['giftVoucher.name.description']()}
+        />
       {/snippet}
     </Form.Control>
-    <Form.Description>
-      {m['giftVoucher.name.description']()}
-    </Form.Description>
     <Form.FieldErrors />
   </Form.Field>
 
-  <Form.Field {form} name="email">
+  <Form.Field {form} name="email" class="mt-4 space-y-1">
     <Form.Control>
       {#snippet children({ props })}
         <Form.Label>{m['giftVoucher.email.label']()}</Form.Label>
-        <Input {...props} bind:value={$formData.email} />
+        <Input
+          {...props}
+          bind:value={$formData.email}
+          placeholder={m['giftVoucher.email.description']()}
+        />
       {/snippet}
     </Form.Control>
-    <Form.Description>
-      {m['giftVoucher.email.description']()}
-    </Form.Description>
     <Form.FieldErrors />
   </Form.Field>
 
-  <Form.Field {form} name="room">
+  <Form.Field {form} name="room" class="mt-4 space-y-1">
     <Form.Control>
       {#snippet children({ props })}
         <Form.Label>{m['giftVoucher.room.label']()}</Form.Label>
@@ -119,10 +122,12 @@
           type="single"
           name={props.name}
         >
-          <Select.Trigger {...props} class="w-[180px]">
+          <Select.Trigger {...props} class="w-[400px]">
             {$formData.room
-              ? $formData.room
-              : m['giftVoucher.room.label']()}
+              ? roomsOptions.find(
+                  (option) => option.value === $formData.room,
+                )?.translationKey
+              : m['giftVoucher.room.description']()}
           </Select.Trigger>
           <Select.Content>
             {#each roomsOptions as { translationKey, value }}
@@ -132,38 +137,41 @@
         </Select.Root>
       {/snippet}
     </Form.Control>
-    <Form.Description>
-      {m['giftVoucher.room.description']()}
-    </Form.Description>
     <Form.FieldErrors />
   </Form.Field>
 
-  <Form.Field {form} name="discounted">
-    <Form.Control>
-      {#snippet children({ props })}
-        <Form.Label>{m['giftVoucher.discounted.label']()}</Form.Label>
-        <Select.Root
-          type="single"
-          name={props.name}
-          bind:value={$formData.discounted}
-        >
-          <Select.Trigger {...props} class="w-[180px]"
-          ></Select.Trigger>
-          <Select.Content>
-            {#each discounted as { translationKey, value }}
-              <Select.Item {value}>{translationKey}</Select.Item>
-            {/each}
-          </Select.Content>
-        </Select.Root>
-      {/snippet}
-    </Form.Control>
-    <Form.Description>
-      {m['giftVoucher.discounted.description']()}
-    </Form.Description>
-    <Form.FieldErrors />
-  </Form.Field>
+  {#if $formData.room === 'prison' || $formData.room === 'winery'}
+    <Form.Field {form} name="discounted" class="mt-4 space-y-1">
+      <Form.Control>
+        {#snippet children({ props })}
+          <Form.Label
+            >{m['giftVoucher.discounted.label']()}</Form.Label
+          >
+          <Select.Root
+            type="single"
+            name={props.name}
+            bind:value={$formData.discounted}
+          >
+            <Select.Trigger {...props} class="w-[400px]">
+              {$formData.discounted
+                ? discounted.find(
+                    (option) => option.value === $formData.discounted,
+                  )?.translationKey
+                : m['giftVoucher.discounted.description']()}
+            </Select.Trigger>
+            <Select.Content>
+              {#each discounted as { translationKey, value }}
+                <Select.Item {value}>{translationKey}</Select.Item>
+              {/each}
+            </Select.Content>
+          </Select.Root>
+        {/snippet}
+      </Form.Control>
+      <Form.FieldErrors />
+    </Form.Field>
+  {/if}
 
-  <Form.Field {form} name="variant">
+  <Form.Field {form} name="variant" class="mt-4 space-y-1">
     <Form.Control>
       {#snippet children({ props })}
         <Form.Label>{m['giftVoucher.variant.label']()}</Form.Label>
@@ -172,8 +180,13 @@
           name={props.name}
           bind:value={$formData.variant}
         >
-          <Select.Trigger class="w-[180px]" {...props}
-          ></Select.Trigger>
+          <Select.Trigger class="w-[400px]" {...props}>
+            {$formData.variant
+              ? variants.find(
+                  (option) => option.value === $formData.variant,
+                )?.translationKey
+              : m['giftVoucher.variant.description']()}
+          </Select.Trigger>
           <Select.Content>
             {#each variants as { translationKey, value }}
               <Select.Item {value} label={translationKey} />
@@ -182,13 +195,10 @@
         </Select.Root>
       {/snippet}
     </Form.Control>
-    <Form.Description>
-      {m['giftVoucher.variant.description']()}
-    </Form.Description>
     <Form.FieldErrors />
   </Form.Field>
 
-  <Form.Field {form} name="payment">
+  <Form.Field {form} name="payment" class="mt-4 space-y-1">
     <Form.Control>
       {#snippet children({ props })}
         <Form.Label>{m['giftVoucher.payment.label']()}</Form.Label>
@@ -197,8 +207,13 @@
           bind:value={$formData.payment}
           name={props.name}
         >
-          <Select.Trigger class="w-[180px]" {...props}
-          ></Select.Trigger>
+          <Select.Trigger class="w-[400px]" {...props}>
+            {$formData.payment
+              ? payment.find(
+                  (option) => option.value === $formData.payment,
+                )?.translationKey
+              : m['giftVoucher.payment.description']()}
+          </Select.Trigger>
           <Select.Content>
             {#each payment as { translationKey, value }}
               <Select.Item {value} label={translationKey} />
@@ -207,13 +222,10 @@
         </Select.Root>
       {/snippet}
     </Form.Control>
-    <Form.Description>
-      {m['giftVoucher.payment.description']()}
-    </Form.Description>
     <Form.FieldErrors />
   </Form.Field>
 
-  <Form.Field {form} name="note">
+  <Form.Field {form} name="note" class="mt-4 w-[400px] space-y-1">
     <Form.Control>
       {#snippet children({ props })}
         <Form.Label>{m['giftVoucher.note.label']()}</Form.Label>
@@ -223,23 +235,35 @@
     <Form.FieldErrors />
   </Form.Field>
 
-  <Form.Field {form} name="personalInfoProcessing">
+  <Form.Field {form} name="personalInfoProcessing" class="mt-4">
     <Form.Control>
       {#snippet children({ props })}
-        <Form.Label>
-          {@html m['giftVoucher.personalInfoProcessing.label']()}
-        </Form.Label>
-        <Checkbox
-          {...props}
-          bind:checked={$formData.personalInfoProcessing}
-        />
+        <div class="my-4 flex items-center space-x-2">
+          <Checkbox
+            {...props}
+            bind:checked={$formData.personalInfoProcessing}
+          />
+          <div>
+            <Form.Label>
+              {@html m['giftVoucher.personalInfoProcessing.label']()}
+            </Form.Label>
+          </div>
+        </div>
+        <Form.FieldErrors />
+        <Form.Description>
+          Více informací o zpracování osobních údajů najdete v
+          <a href="/ZOOU.pdf" style="text-decoration: underline;">
+            Zásady zpracování a ochrany osobních údajů
+          </a>.
+        </Form.Description>
       {/snippet}
     </Form.Control>
-    <Form.FieldErrors />
   </Form.Field>
-  <Form.Button>
-    {m['giftVoucher.submitButton']()}
-  </Form.Button>
+  <div class="flex flex-row justify-end">
+    <Form.Button>
+      {m['giftVoucher.submitButton']()}
+    </Form.Button>
+  </div>
 </form>
 {#if dev}
   <SuperDebug data={$formData} />
