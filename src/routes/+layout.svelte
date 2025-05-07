@@ -2,6 +2,7 @@
   import '../app.css';
   import Navbar from '$lib/components/Navbar.svelte';
   import Footer from '$lib/components/Footer.svelte';
+  import { Toaster } from '$shadcn/sonner';
 
   let { children } = $props();
 </script>
@@ -32,6 +33,7 @@
     href="https://fonts.googleapis.com/css?family=Raleway"
   />
 </svelte:head>
+<Toaster />
 <Navbar />
 {@render children()}
 <Footer />

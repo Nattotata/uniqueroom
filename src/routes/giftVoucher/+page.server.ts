@@ -16,6 +16,7 @@ export const load: PageServerLoad = async () => {
 export const actions: Actions = {
   default: async (event) => {
     const form = await superValidate(event, zod(giftVoucherSchema));
+    console.info('Voucher posted!');
     if (!form.valid) {
       return message(form, 'Invalid form');
     }

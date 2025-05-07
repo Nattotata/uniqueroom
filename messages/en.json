@@ -90,46 +90,57 @@
     "buttonText": "Book now"
   },
   "giftVoucher": {
-    "submitButton": "Objednat",
+    "submitButton": "Submit",
     "email": {
       "label": "Email",
-      "description": "Zadejte Váš email"
+      "description": "Fill out your email",
+      "errorMessage": "Please, fill out your email. For example, john.doe@gmail.com."
     },
     "name": {
-      "label": "Jméno",
-      "description": "Zadejte Vaše jméno"
+      "label": "Name",
+      "description": "Fill out your name",
+      "errorMessage": "Please, fill out your name."
     },
     "room": {
-      "label": "Úniková hra",
-      "description": "Vyberte únikovou hru",
-      "prison": "Vojákova cela",
-      "winery": "Záhada vinařství",
-      "cat": "Planeta koček"
+      "label": "Escape room",
+      "description": "Select an escape game",
+      "prison": "Soldier's cell",
+      "winery": "Mysterious winery",
+      "cat": "Planet of cats",
+      "errorMessage": "Please, select an escape game."
     },
     "discounted": {
-      "label": "Dopolední termín",
-      "description": "Vyberte dopolední termín nebo termín bez omezení",
-      "discounted": "Termíny do 13. hodiny (Záhada vinařství, Vojákova cela)",
-      "full": "Termín bez omezení"
+      "label": "Limited availability",
+      "description": "Choose an voucher with no limitations or a voucher for time slots before 1 pm.",
+      "discounted": "Time slots before 1 pm",
+      "full": "No limitation on time slots",
+      "errorMessage": "Prosím, vyberte si dopolední termín nebo termín bez omezení."
     },
     "variant": {
       "label": "Varianta voucheru",
       "description": "Voucher v papírové nebo elektronické formě",
       "paper": "Voucher v papírové formě (k vyzvednutí na Lidické 40)",
-      "electronic": "Voucher v elektronické formě (zašleme na email)"
+      "electronic": "Voucher v elektronické formě (zašleme na email)",
+      "errorMap": "Prosím vyberte si voucher v papírové nebo elektronické formě.",
+      "errorMessage": "Prosím vyberte si voucher v papírové nebo elektronické formě."
     },
     "payment": {
       "label": "Platba",
       "description": "Vyberte platební metodu",
       "cash": "Platba hotově (na Lidické 40)",
       "stripe": "Platba online (kartou nebo v bankovní aplikaci)",
-      "bankTransfer": "Platba převodem na účet"
+      "bankTransfer": "Platba převodem na účet",
+      "errorMap": "Prosím, vyberte si platební metodu",
+      "errorMessage": "Prosím, vyberte si platební metodu"
     },
     "note": {
       "label": "Poznámka"
     },
     "personalInfoProcessing": {
-      "label": "Souhlas se <a href='https://www.uniqueroom.cz/ZOOU.pdf'><strong>zpracováním osobních údajů</strong></a>."
-    }
+      "label": "Souhlas se zpracováním osobních údajů",
+      "errorMessage": "Prosím souhlaste se zpracováním osobních údajů."
+    },
+    "successToast": "Formulář odeslán! ✅",
+    "failToast": "Opravte chybějící údaje ve formuláři."
   }
 }

@@ -22,7 +22,7 @@ export const giftVoucherSchema = z.object({
       message: m['giftVoucher.room.errorMessage'](),
     }),
   }),
-  discounted: z.enum(['discounted', 'not discounted'], {
+  discounted: z.enum(['discounted', 'full'], {
     errorMap: () => ({
       message: m['giftVoucher.discounted.errorMessage'](),
     }),
@@ -40,7 +40,7 @@ export const giftVoucherSchema = z.object({
   note: z.string().max(600).optional(),
   personalInfoProcessing: z.literal(true, {
     errorMap: () => ({
-      message: 'Prosím souhlaste se zpracováním osobních údajů',
+      message: m['giftVoucher.personalInfoProcessing.errorMessage'](),
     }),
   }),
 });

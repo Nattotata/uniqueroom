@@ -4,6 +4,10 @@
   import * as Select from '$shadcn/select';
   import { Checkbox } from '$shadcn/checkbox';
 
+  import imagePrison from '$assets/img/poukaz-web-cela.webp?enhanced';
+  import imageWinery from '$assets/img/poukaz-web-vinarstvi.webp?enhanced';
+  import imageCat from '$assets/img/poukaz-web-kocka.webp?enhanced';
+
   import { m } from '$lib/paraglide/messages';
 
   import {
@@ -19,6 +23,7 @@
 
   import { zodClient } from 'sveltekit-superforms/adapters';
   import { dev } from '$app/environment';
+  import { toast } from 'svelte-sonner';
 
   let {
     data,
@@ -27,9 +32,29 @@
 
   const form = superForm(data.form, {
     validators: zodClient(giftVoucherSchema),
+    onChange: (event) => {
+      console.info('target');
+      console.info(event.target);
+      console.info('form changed');
+      console.info(event);
+    },
+    onUpdated: ({ form }) => {
+      console.info(form.valid);
+      if (!form.valid) {
+        toast(m['giftVoucher.failToast']());
+        return;
+      }
+      toast(m['giftVoucher.successToast']());
+    },
   });
 
   const { form: formData, enhance, message } = form;
+
+  const images = {
+    prison: imagePrison,
+    winery: imageWinery,
+    cat: imageCat,
+  };
 
   const roomsOptions = [
     {
@@ -131,13 +156,26 @@
           </Select.Trigger>
           <Select.Content>
             {#each roomsOptions as { translationKey, value }}
-              <Select.Item {value} label={translationKey} />
+              <Select.Item
+                onchange={(e) => {
+                  console.info(e);
+                }}
+                {value}
+                label={translationKey}
+              />
             {/each}
           </Select.Content>
         </Select.Root>
       {/snippet}
     </Form.Control>
     <Form.FieldErrors />
+    {#if $formData.room}
+      <enhanced:img
+        class="my-2 rounded-md"
+        src={images[$formData.room]}
+        alt="voucher"
+      ></enhanced:img>
+    {/if}
   </Form.Field>
 
   {#if $formData.room === 'prison' || $formData.room === 'winery'}
@@ -249,13 +287,13 @@
             </Form.Label>
           </div>
         </div>
-        <Form.FieldErrors />
         <Form.Description>
           Více informací o zpracování osobních údajů najdete v
           <a href="/ZOOU.pdf" style="text-decoration: underline;">
             Zásady zpracování a ochrany osobních údajů
           </a>.
         </Form.Description>
+        <Form.FieldErrors />
       {/snippet}
     </Form.Control>
   </Form.Field>
@@ -266,7 +304,9 @@
   </div>
 </form>
 {#if dev}
-  <SuperDebug data={$formData} />
+  <div class="mx-2">
+    <SuperDebug data={$formData} />
+  </div>
 {/if}
 {#if $message}
   <div class="message">{$message}</div>
