@@ -84,6 +84,7 @@
     "buttonText": "Rezervovat"
   },
   "giftVoucher": {
+    "heading": "Dárkové poukazy",
     "submitButton": "Objednat",
     "email": {
       "label": "Email",
@@ -137,5 +138,34 @@
     },
     "successToast": "Formulář odeslán! ✅",
     "failToast": "Opravte chybějící údaje ve formuláři."
+  },
+"giftVoucherSection": {
+  "heading": "Dárkové poukazy",
+  "text": "Obdarujte Vaše blízké zážitkem. Po zaplacení dostanete poukaz v papírové nebo elektronické podobě. Poukaz bude mít kód, který můžete použít během rezervace nebo místo placení.",
+  "buttonAlt": "Objednat poukaz"
+},
+"pages": {
+  "home": {
+    "alt": "Domů"
+  },
+  "giftVoucher": {
+    "alt": "Dárkové poukazy"
   }
+},
+"contactForm": {
+  "heading": "Kontakt",
+  "subheading": "Napište nám",
+  "name": {
+    "placeholder": "Jméno",
+    "label":"Jméno"
+  },
+  "email": {
+    "placeholder": "Email",
+    "label":"Email"
+  },
+  "message": {
+    "placeholder": "Zpráva",
+    "label":"Zpráva"
+  }
+}
 }

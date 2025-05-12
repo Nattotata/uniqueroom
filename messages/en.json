@@ -90,6 +90,7 @@
     "buttonText": "Book now"
   },
   "giftVoucher": {
+    "heading": "Gift voucher",
     "submitButton": "Submit",
     "email": {
       "label": "Email",
@@ -142,5 +143,18 @@
     },
     "successToast": "Formulář odeslán! ✅",
     "failToast": "Opravte chybějící údaje ve formuláři."
+  },
+"giftVoucherSection": {
+  "heading": "Gift vouchers",
+  "text": "Give an experience to your close ones. After payment, you will receive a gift voucher in paper or electronic form. The voucher will have a code that can be used during reservation or during payment.",
+  "buttonAlt": "Order a voucher"
+},
+"pages": {
+  "home": {
+    "alt": "Domů"
+  },
+  "giftVoucher": {
+    "alt": "Dárkové poukazy"
   }
+}
 }

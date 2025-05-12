@@ -24,6 +24,7 @@
   import { zodClient } from 'sveltekit-superforms/adapters';
   import { dev } from '$app/environment';
   import { toast } from 'svelte-sonner';
+import { Heading2 } from '$typography';
 
   let {
     data,
@@ -109,6 +110,10 @@
   ];
 </script>
 
+<div class="mx-4 mt-4">
+  <Heading2>{m['giftVoucher.heading']()}</Heading2>
+</div>
+<div class="flex flex-col justify-center w-full items-center">
 <form method="POST" use:enhance class="m-8 w-[400px]">
   <Form.Field {form} name="name" class="space-y-1">
     <Form.Control>
@@ -311,3 +316,4 @@
 {#if $message}
   <div class="message">{$message}</div>
 {/if}
+</div>

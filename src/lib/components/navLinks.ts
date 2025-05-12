@@ -26,3 +26,14 @@ export const navLinks = [
     link: '#contact',
   },
 ];
+
+export const pages = {
+  giftVoucher: {
+    alt: m['pages.giftVoucher.alt'](), 
+    src: "/giftVoucher"
+  },
+  homepage: {
+    alt: m['pages.home.alt'](),
+    src: "/"
+  }
+}
