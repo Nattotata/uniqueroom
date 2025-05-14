@@ -1,6 +1,6 @@
 <script lang="ts">
   import { cn } from '$lib/utils';
-  const { children, className = "" } = $props();
+  const { children, className = '' } = $props();
 </script>
 
 <p class={cn(className, 'text-md text-muted-foreground')}>

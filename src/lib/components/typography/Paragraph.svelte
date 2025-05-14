@@ -3,7 +3,7 @@
 </script>
 
 <p
-  class="max-w-[75ch] leading-7 text-primaryText [&:not(:first-child)]:mt-1"
+  class="text-primaryText max-w-[75ch] leading-7 [&:not(:first-child)]:mt-1"
 >
   {#if children}
     {@render children()}

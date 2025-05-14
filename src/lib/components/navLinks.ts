@@ -29,11 +29,11 @@ export const navLinks = [
 
 export const pages = {
   giftVoucher: {
-    alt: m['pages.giftVoucher.alt'](), 
-    src: "/giftVoucher"
+    alt: m['pages.giftVoucher.alt'](),
+    src: '/giftVoucher',
   },
   homepage: {
     alt: m['pages.home.alt'](),
-    src: "/"
-  }
-}
+    src: '/',
+  },
+};

@@ -6,8 +6,9 @@
 <h4
   class={cn(
     'scroll-m-20 text-xl font-semibold tracking-tight',
-    className
+    className,
   )}
-  {style}>
+  {style}
+>
   {@render children()}
 </h4>

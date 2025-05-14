@@ -158,10 +158,19 @@
     }
   },
   "address": {
-    "heading": "Adresa",
-    "text": "Jak se k nám dostanete?",
-    "map": "Brno, Lidická 40",
-    "phone": "123",
-    "mail": "foo@bar.com"
+    "map": {
+      "heading": "Address",
+      "text": "Brno, Lidicka 40"
+    },
+    "phone": {
+      "heading": "Phone",
+      "text": "{phone}"
+    },
+    "mail": {
+      "heading": "Email",
+      "text": "{email}"
+    },
+    "heading": "Address",
+    "text": "Where can you find us"
   }
 }
