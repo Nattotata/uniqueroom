@@ -23,16 +23,16 @@
   } from 'sveltekit-superforms';
 
   import { zodClient } from 'sveltekit-superforms/adapters';
-  import { dev } from '$app/environment';
+  import { dev, browser } from '$app/environment';
   import { toast } from 'svelte-sonner';
 import { Heading2 } from '$typography';
 
   let {
-data,
-  }: { data: { form: SuperValidated<Infer<GiftVoucherSchema>> } } =
+data
+  }: { data: SuperValidated<Infer<GiftVoucherSchema>>  } =
     $props();
 
-  const form = superForm(data.form, {
+  const form = superForm(data, {
     validators: zodClient(giftVoucherSchema),
 
     onUpdated: ({ form }) => {
@@ -109,7 +109,7 @@ data,
 <div class="mx-4 mt-4">
   <Heading2>{m['giftVoucher.heading']()}</Heading2>
 </div>
-<div class="flex flex-col justify-center w-full items-center">
+<div class="flex flex-col w-full items-start">
 <form method="POST" use:enhance class="m-8 w-[400px]">
   <Form.Field {form} name="name" class="space-y-1">
     <Form.Control>
@@ -304,7 +304,7 @@ data,
     </Form.Button>
   </div>
 </form>
-{#if dev}
+{#if dev && browser}
   <div class="mx-2">
     <SuperDebug data={$formData} />
   </div>

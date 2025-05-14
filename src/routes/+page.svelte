@@ -10,7 +10,7 @@
   import GiftVoucherSection from "$lib/components/GiftVoucher/GiftVoucherSection.svelte"
   import ContactForm from '$lib/components/ContactForm/ContactForm.svelte';
   import GiftVoucherForm from '$lib/components/GiftVoucher/GiftVoucherForm.svelte';
-
+  import AddressSection from "$lib/components/AddressSection.svelte"
   let { data } = $props()
 </script>
 
@@ -22,6 +22,8 @@
 <Gallery />
 <Reviews />
 <Pricing />
-<GiftVoucherSection />
-<GiftVoucherForm data={data.giftVoucherForm} />
-<ContactForm contactFormInput={data.contactForm}/>
+<!--
+  <GiftVoucherForm data={data.giftVoucherForm} />
+  <ContactForm contactFormInput={data.contactForm}/>
+  -->
+<AddressSection />

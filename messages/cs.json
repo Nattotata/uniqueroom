@@ -139,33 +139,40 @@
     "successToast": "Formulář odeslán! ✅",
     "failToast": "Opravte chybějící údaje ve formuláři."
   },
-"giftVoucherSection": {
-  "heading": "Dárkové poukazy",
-  "text": "Obdarujte Vaše blízké zážitkem. Po zaplacení dostanete poukaz v papírové nebo elektronické podobě. Poukaz bude mít kód, který můžete použít během rezervace nebo místo placení.",
-  "buttonAlt": "Objednat poukaz"
-},
-"pages": {
-  "home": {
-    "alt": "Domů"
+  "giftVoucherSection": {
+    "heading": "Dárkové poukazy",
+    "text": "Obdarujte Vaše blízké zážitkem. Po zaplacení dostanete poukaz v papírové nebo elektronické podobě. Poukaz bude mít kód, který můžete použít během rezervace nebo místo placení.",
+    "buttonAlt": "Objednat poukaz"
   },
-  "giftVoucher": {
-    "alt": "Dárkové poukazy"
+  "pages": {
+    "home": {
+      "alt": "Domů"
+    },
+    "giftVoucher": {
+      "alt": "Dárkové poukazy"
+    }
+  },
+  "contactForm": {
+    "heading": "Kontakt",
+    "subheading": "Napište nám",
+    "name": {
+      "placeholder": "Jméno",
+      "label": "Jméno"
+    },
+    "email": {
+      "placeholder": "Email",
+      "label": "Email"
+    },
+    "message": {
+      "placeholder": "Zpráva",
+      "label": "Zpráva"
+    }
+  },
+  "address": {
+    "heading": "Adresa",
+    "text": "Jak se k nám dostanete?",
+    "map": "Brno, Lidická 40",
+    "phone": "123",
+    "mail": "foo@bar.com"
   }
-},
-"contactForm": {
-  "heading": "Kontakt",
-  "subheading": "Napište nám",
-  "name": {
-    "placeholder": "Jméno",
-    "label":"Jméno"
-  },
-  "email": {
-    "placeholder": "Email",
-    "label":"Email"
-  },
-  "message": {
-    "placeholder": "Zpráva",
-    "label":"Zpráva"
-  }
-}
 }

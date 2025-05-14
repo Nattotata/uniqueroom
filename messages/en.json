@@ -144,17 +144,24 @@
     "successToast": "Formulář odeslán! ✅",
     "failToast": "Opravte chybějící údaje ve formuláři."
   },
-"giftVoucherSection": {
-  "heading": "Gift vouchers",
-  "text": "Give an experience to your close ones. After payment, you will receive a gift voucher in paper or electronic form. The voucher will have a code that can be used during reservation or during payment.",
-  "buttonAlt": "Order a voucher"
-},
-"pages": {
-  "home": {
-    "alt": "Domů"
+  "giftVoucherSection": {
+    "heading": "Gift vouchers",
+    "text": "Give an experience to your close ones. After payment, you will receive a gift voucher in paper or electronic form. The voucher will have a code that can be used during reservation or during payment.",
+    "buttonAlt": "Order a voucher"
   },
-  "giftVoucher": {
-    "alt": "Dárkové poukazy"
+  "pages": {
+    "home": {
+      "alt": "Domů"
+    },
+    "giftVoucher": {
+      "alt": "Dárkové poukazy"
+    }
+  },
+  "address": {
+    "heading": "Adresa",
+    "text": "Jak se k nám dostanete?",
+    "map": "Brno, Lidická 40",
+    "phone": "123",
+    "mail": "foo@bar.com"
   }
-}
 }

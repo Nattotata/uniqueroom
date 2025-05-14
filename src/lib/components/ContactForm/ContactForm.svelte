@@ -11,7 +11,7 @@
    } from "sveltekit-superforms"
    
    import {zodClient} from "sveltekit-superforms/adapters"
-   import {dev} from "$app/environment"
+   import {browser, dev} from "$app/environment"
    import {toast} from "svelte-sonner"
    import {Heading2, Paragraph} from "$typography"
 
@@ -66,7 +66,7 @@
 </Form.Field>
 </form>
 
-{#if dev}
+{#if dev && browser}
 <div class="mx-16">
 <SuperDebug data={contactFormData} />
 </div>
